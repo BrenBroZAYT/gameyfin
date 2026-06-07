@@ -59,4 +59,7 @@ const menuItems: MenuItem[] = [
     }
 ]
 
-export const AdministrationView = withSideMenu("/administration", menuItems);
+const AdministrationView = withSideMenu("/administration", menuItems);
+
+export default AdministrationView;
+
