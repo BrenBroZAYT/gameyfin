@@ -22,11 +22,10 @@ app/dist/
 !app/build/libs/
 !app/build/libs/app.jar
 
-# Only keep plugin jars in build/libs
-plugins/**
-!plugins/*/build/
-!plugins/*/build/libs/
-!plugins/*/build/libs/*.jar
+# Exclude plugin runtime data (source code is needed for build)
+plugins/data/
+plugins/state/
+plugins/**/*.jar
 
 # Large local/runtime data not needed in image context
 data/
